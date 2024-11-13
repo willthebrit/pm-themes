@@ -3,7 +3,7 @@ import {
   type MantineColorsTuple,
   type MantineTheme,
   rem,
-} from "@mantine/core";
+} from "npm:@mantine/core";
 
 const $marineBlue: MantineColorsTuple = [
   "#e9f2ff",
