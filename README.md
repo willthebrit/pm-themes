@@ -6,25 +6,24 @@ A simple theme object to reflect the PM UI appearence.
 
 ```bash
 # npm
-npx jsr add @willthebrit/pm-themes
+npx jsr add @pennymac/theme
 
 # deno
-deno add jsr:@willthebrit/pm-themes
+deno add jsr:@pennymac/theme
 ```
 
 ## Usage in Next.js
 
 ```tsx
 import "@mantine/core/styles.css";
-import "@willthebrit/PmThemeStyles.css";
 
 import { AppProps } from "next/app";
 import { MantineProvider } from "@mantine/core";
-import { PmTheme } from "@willthebrit/theme";
+import { theme } from "@pennymac/theme";
 
 function MyApp({ Component, pageProps }: AppProps) {
     return (
-        <MantineProvider theme={PmTheme}>
+        <MantineProvider theme={theme}>
             <Component {...pageProps} />
         </MantineProvider>
     );
