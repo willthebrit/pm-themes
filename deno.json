@@ -1,9 +1,7 @@
 {
-  "name": "@willthebrit/pm-themes",
-  "version": "0.1.7",
-  "exports": {
-    ".": "./main.ts"
-  },
+  "name": "@pennymac/theme",
+  "version": "0.1.0",
+  "exports": "./mod.ts",
   "license": "MIT",
   "tasks": {
     "dev": "deno run --watch main.ts"
