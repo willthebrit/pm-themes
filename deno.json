@@ -1,9 +1,8 @@
 {
   "name": "@willthebrit/pm-themes",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "exports": {
-    ".": "./main.ts",
-    "./styles": "./styles.css"
+    ".": "./main.ts"
   },
   "license": "MIT",
   "tasks": {
