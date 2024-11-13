@@ -1,0 +1,12 @@
+{
+  "name": "@willthebrit/pm-themes",
+  "version": "0.1.0",
+  "exports": "./main.ts",
+  "license": "MIT",
+  "tasks": {
+    "dev": "deno run --watch main.ts"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1"
+  }
+}
