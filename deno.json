@@ -1,7 +1,10 @@
 {
   "name": "@willthebrit/pm-themes",
-  "version": "0.1.5",
-  "exports": "./main.ts",
+  "version": "0.1.6",
+  "exports": {
+    ".": "./main.ts",
+    "./styles": "./styles.css"
+  },
   "license": "MIT",
   "tasks": {
     "dev": "deno run --watch main.ts"
