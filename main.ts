@@ -57,4 +57,4 @@ export const PmTheme = createTheme({
   spacing: {
     xxs: rem(4),
   },
-});
+}) as MantineTheme;
