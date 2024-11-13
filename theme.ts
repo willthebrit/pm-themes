@@ -18,6 +18,7 @@ const $marineBlue: MantineColorsTuple = [
   "#0042a1",
 ];
 
+/** This is the theme. */
 export const theme = createTheme({
   autoContrast: true,
   activeClassName: "",

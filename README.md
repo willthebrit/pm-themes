@@ -1,6 +1,6 @@
 # PM Themes
 
-A simple theme object to reflect the PM UI appearence.
+A simple theme object to reflect the Pennymac UI styles. Experimental.
 
 ## Installation
 
