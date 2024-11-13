@@ -1,0 +1,12 @@
+{
+  "name": "pm-themes",
+  "version": "1.0.0",
+  "description": "theme",
+  "main": "main.ts",
+  "author": "Will Morgan willthebrit@icloud.com",
+  "license": "MIT",
+  "dependencies": {
+    "@mantine/core": "^7.14.0",
+    "@mantine/hooks": "^7.14.0"
+  }
+}
