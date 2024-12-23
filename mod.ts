@@ -1,1 +1,1 @@
-export { theme } from "./theme.ts";
+export { resolver, theme } from "./theme.ts";
