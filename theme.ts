@@ -52,9 +52,12 @@ export const theme = createTheme({
     themedWhite: virtualColor({
       name: "themedWhite",
       dark: "",
-      light: "custom",
+      light: "offwhite",
     }),
-    custom: colorsTuple("#FFFEFE"),
+    offwhite: colorsTuple("#FFFEFE"),
+    positive: colorsTuple("#00AA44"),
+    caution: colorsTuple("#F89017"),
+    negative: colorsTuple("#f31C29"),
   },
   defaultRadius: "6px",
   fontSizes: {
