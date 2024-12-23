@@ -19,11 +19,11 @@ import "@mantine/core/styles.css";
 
 import { AppProps } from "next/app";
 import { MantineProvider } from "@mantine/core";
-import { theme } from "@pennymac/theme";
+import { resolver, theme } from "@pennymac/theme";
 
 function MyApp({ Component, pageProps }: AppProps) {
     return (
-        <MantineProvider theme={theme}>
+        <MantineProvider cssVariablesResolver={resolver} theme={theme}>
             <Component {...pageProps} />
         </MantineProvider>
     );
