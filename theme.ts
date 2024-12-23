@@ -1,8 +1,11 @@
 import {
+  colorsTuple,
   createTheme,
+  type CSSVariablesResolver,
   type MantineColorsTuple,
   type MantineTheme,
   rem,
+  virtualColor,
 } from "@mantine/core";
 
 const $marineBlue: MantineColorsTuple = [
@@ -17,6 +20,14 @@ const $marineBlue: MantineColorsTuple = [
   "#0a4cb5",
   "#0042a1",
 ];
+
+export const resolver: CSSVariablesResolver = () => ({
+  variables: {},
+  light: {
+    "--mantine-color-body": "#F0F1F7",
+  },
+  dark: {},
+});
 
 /** This is the theme. */
 export const theme = createTheme({
@@ -38,6 +49,12 @@ export const theme = createTheme({
   primaryColor: "marine-blue",
   colors: {
     "marine-blue": $marineBlue,
+    themedWhite: virtualColor({
+      name: "themedWhite",
+      dark: "",
+      light: "custom",
+    }),
+    custom: colorsTuple("#FFFEFE"),
   },
   defaultRadius: "6px",
   fontSizes: {
