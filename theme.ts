@@ -2,15 +2,18 @@ import {
   Button,
   colorsTuple,
   createTheme,
+  rem,
+  type ClassNames,
   type CSSVariablesResolver,
   type MantineColorsTuple,
   type MantineTheme,
-  rem,
   virtualColor,
 } from "@mantine/core";
 
 // @ts-ignore import is an issue, testing...
-import styles from "./button.module.css";
+// import styles from "./button.module.css";
+
+const styles = (await fetch("./button.module.css")) as ClassNames;
 
 const $marineBlue: MantineColorsTuple = [
   "#e9f2ff",
