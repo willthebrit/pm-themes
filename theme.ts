@@ -1,5 +1,4 @@
 import {
-  Button,
   colorsTuple,
   createTheme,
   rem,
@@ -7,10 +6,7 @@ import {
   type MantineColorsTuple,
   type MantineTheme,
   virtualColor,
-  type ButtonStylesNames,
 } from "@mantine/core";
-
-const styles = await Deno.readTextFile("./button.module.css");
 
 const $marineBlue: MantineColorsTuple = [
   "#e9f2ff",
@@ -38,9 +34,6 @@ export const theme = createTheme({
   autoContrast: true,
   activeClassName: "",
   components: {
-    Button: Button.extend({
-      classNames: styles as Partial<Record<ButtonStylesNames, string>>,
-    }),
     InputWrapper: {
       styles: (theme: MantineTheme) => ({
         label: {
