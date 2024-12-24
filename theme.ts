@@ -21,6 +21,7 @@ const $marineBlue: MantineColorsTuple = [
   "#0042a1",
 ];
 
+/** This is the resolver. */
 export const resolver: CSSVariablesResolver = () => ({
   variables: {},
   light: {
