@@ -1,4 +1,5 @@
 import {
+  Button,
   colorsTuple,
   createTheme,
   type CSSVariablesResolver,
@@ -7,6 +8,9 @@ import {
   rem,
   virtualColor,
 } from "@mantine/core";
+
+// @ts-ignore import is an issue, testing...
+import styles from "./button.module.css";
 
 const $marineBlue: MantineColorsTuple = [
   "#e9f2ff",
@@ -34,6 +38,9 @@ export const theme = createTheme({
   autoContrast: true,
   activeClassName: "",
   components: {
+    Button: Button.extend({
+      classNames: styles,
+    }),
     InputWrapper: {
       styles: (theme: MantineTheme) => ({
         label: {

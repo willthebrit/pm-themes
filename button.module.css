@@ -1,0 +1,8 @@
+.root {
+    &[data-disabled] {
+        @mixin light {
+            background: var(--mantine-color-marine-blue-2);
+            color: white
+        }
+    }
+}
