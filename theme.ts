@@ -3,17 +3,14 @@ import {
   colorsTuple,
   createTheme,
   rem,
-  type ClassNames,
   type CSSVariablesResolver,
   type MantineColorsTuple,
   type MantineTheme,
   virtualColor,
+  type ButtonStylesNames,
 } from "@mantine/core";
 
-// @ts-ignore import is an issue, testing...
-// import styles from "./button.module.css";
-
-const styles = (await fetch("./button.module.css")) as ClassNames;
+const styles = await Deno.readTextFile("./button.module.css");
 
 const $marineBlue: MantineColorsTuple = [
   "#e9f2ff",
@@ -42,7 +39,7 @@ export const theme = createTheme({
   activeClassName: "",
   components: {
     Button: Button.extend({
-      classNames: styles,
+      classNames: styles as Partial<Record<ButtonStylesNames, string>>,
     }),
     InputWrapper: {
       styles: (theme: MantineTheme) => ({
